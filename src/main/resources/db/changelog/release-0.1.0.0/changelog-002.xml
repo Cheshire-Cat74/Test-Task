@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <changeSet author="Вика" id="1672954987388-1">
+        <insert tableName="department">
+            <column name="id">1</column>
+            <column name="name">department1</column>
+            <column name="active">true</column>
+        </insert>
+    </changeSet>
+    <changeSet author="Вика" id="1672954987388-2">
+        <insert tableName="user_role">
+            <column name="id">1</column>
+            <column name="name">ADMIN</column>
+        </insert>
+    </changeSet>
+    <changeSet author="Вика" id="1672954987388-3">
+        <insert tableName="users">
+            <column name="id">1</column>
+            <column name="login">login</column>
+            <column name="password">password</column>
+            <column name="full_name">Иванов Иван Иванович</column>
+            <column name="role_id">1</column>
+            <column name="email">email</column>
+            <column name="department_id">1</column>
+            <column name="birth_day">2023-11-02 02:23:07.000000</column>
+            <column name="active">true</column>
+            <column name="update_date">2023-11-02 02:22:36.000000</column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
